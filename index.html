@@ -46,10 +46,12 @@
       margin-bottom: 15px;
     }
     .charan {
-      font-size: 22px;
       line-height: 1.9;
       color: #2c1600;
       padding: 6px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 22px;
     }
     .mark {
       color: #c0392b;
@@ -106,6 +108,23 @@
   </div>
 
   <div class="footer">जय श्री राम</div>
+
+  <script>
+    // Auto-fit each charan to one line on any screen size
+    function fitCharans() {
+      const charans = document.querySelectorAll('.charan');
+      charans.forEach(function(c) {
+        c.style.fontSize = '22px';
+        let size = 22;
+        while (c.scrollWidth > c.clientWidth && size > 12) {
+          size -= 0.5;
+          c.style.fontSize = size + 'px';
+        }
+      });
+    }
+    window.addEventListener('load', fitCharans);
+    window.addEventListener('resize', fitCharans);
+  </script>
 
 </body>
 </html>
