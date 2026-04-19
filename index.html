@@ -1,26 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akhand Ramayan Path</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: sans-serif;
-      background: #fff4e6;
-      color: #4a2c00;
-      text-align: center;
-      padding: 40px 20px;
+      font-family: 'Noto Sans Devanagari', 'Mangal', sans-serif;
+      background: #fff8ec;
+      color: #3a1f00;
+      min-height: 100vh;
+      padding: 20px;
+      line-height: 1.8;
     }
-    h1 { font-size: 28px; margin-bottom: 10px; }
-    p { font-size: 18px; line-height: 1.6; }
-    .om { font-size: 60px; color: #c0392b; }
+    .header {
+      text-align: center;
+      padding: 20px 10px;
+      border-bottom: 2px solid #c0392b;
+      margin-bottom: 30px;
+    }
+    .om { font-size: 48px; color: #c0392b; }
+    .app-title { font-size: 18px; color: #7a3b00; margin-top: 5px; }
+    .kand-label {
+      text-align: center;
+      font-size: 20px;
+      color: #c0392b;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .verse {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .verse-type {
+      display: inline-block;
+      font-size: 13px;
+      color: #7a3b00;
+      background: #ffe8c7;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .verse-text {
+      font-size: 22px;
+      line-height: 2;
+      color: #2c1600;
+    }
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin-top: 40px;
+      padding-bottom: 30px;
+    }
   </style>
 </head>
 <body>
-  <div class="om">ॐ</div>
-  <h1>Akhand Ramayan Path</h1>
-  <p>जय श्री राम</p>
-  <p>App coming soon</p>
+
+  <div class="header">
+    <div class="om">ॐ</div>
+    <div class="app-title">अखण्ड रामायण पाठ</div>
+  </div>
+
+  <div class="kand-label">बालकाण्ड — मङ्गलाचरण</div>
+
+  <div class="verse">
+    <span class="verse-type">श्लोक</span>
+    <div class="verse-text">
+      वर्णानामर्थसङ्घानां रसानां छन्दसामपि।<br>
+      मङ्गलानां च कर्त्तारौ वन्दे वाणीविनायकौ॥
+    </div>
+  </div>
+
+  <div class="verse">
+    <span class="verse-type">दोहा</span>
+    <div class="verse-text">
+      श्रीगुरु चरन सरोज रज निज मनु मुकुरु सुधारि।<br>
+      बरनउँ रघुबर बिमल जसु जो दायकु फल चारि॥
+    </div>
+  </div>
+
+  <div class="verse">
+    <span class="verse-type">चौपाई</span>
+    <div class="verse-text">
+      बुद्धिहीन तनु जानिके, सुमिरौं पवन कुमार।<br>
+      बल बुधि बिद्या देहु मोहिं, हरहु कलेस बिकार॥
+    </div>
+  </div>
+
+  <div class="footer">जय श्री राम</div>
+
 </body>
 </html>
